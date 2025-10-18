@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche - Sébastien Ballesta</title>
+    <style>
+        :root {
+            --primary: #2e8b57;
+            --secondary: #3cb371;
+            --light: #f0fff0;
+            --dark: #228B22;
+            --text: #333;
+            --background: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--secondary);
+            padding: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--dark);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #555;
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .project {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #fafafa;
+            border-radius: 5px;
+            border-left: 3px solid var(--secondary);
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project p {
+            color: #555;
+            margin: 0.5rem 0;
+        }
+
+        .highlight-box {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--dark);
+        }
+
+        .highlight-box h3 {
+            color: var(--dark);
+            margin-top: 0;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sébastien Ballesta</h1>
+        <p>Neuroprimatologie & Éthologie Cognitive</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="recherche.html">Recherche</a>
+        <a href="enseignement.html">Enseignement</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Recherche</h2>
+
+            <div class="intro">
+                <p>Depuis novembre 2018, je mène mes recherches au Centre de Primatologie de Strasbourg (CdP-Silabe), une structure unique en Europe installée dans un ancien fort militaire. Mon approche interdisciplinaire combine neurobiologie, comportement et éthique animale pour étudier la cognition sociale et la prise de décision chez les primates non humains.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Neuroprimatologie : un nouveau champ de recherche</h3>
+                <p>Je coordonne actuellement la création du champ de recherche de la <strong>neuroprimatologie</strong>, présenté lors d'une session dédiée au congrès NeuroFrance en mai 2025 ("Advances in Neuroprimatology"). Cette approche holistique vise à intégrer mécanismes neurobiologiques, dimensions cognitives et évolutives, et applications éthiques pour l'étude des primates. Un symposium est prévu lors de la conférence de l'EFP en 2026.</p>
+            </div>
+
+            <h2>Axes de Recherche</h2>
+
+            <div class="project">
+                <div class="project-title">Cognition sociale et neuroanatomie comparative</div>
+                <p>Étude des espèces de primates caractérisées par une tolérance sociale accrue (macaque de Tonkean) en contraste avec les modèles classiques (macaque rhésus). Ces travaux combinent observations comportementales en groupes sociaux et études neuroanatomiques par IRM.</p>
+                <p><strong>Résultats clés :</strong> Des différences volumétriques de l'amygdale et de l'hippocampe ont été identifiées entre espèces, suggérant des liens avec la régulation du comportement social et les demandes socio-cognitives.</p>
+                <p><strong>Financements :</strong> ANR SocialNeuroNet (coordinateur), ANR SocEcoPrim</p>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Dispositifs autonomes de test cognitif (MALT)</div>
+                <p>Gestion d'une plateforme de dispositifs autonomes (Machine for Automated Learning and Testing) permettant aux animaux de participer volontairement aux tâches expérimentales. Plus de 20 millions d'essais collectés depuis 2016 chez plus de 80 individus de 4 espèces.</p>
+                <p>Ces outils réduisent le stress lié aux manipulations humaines et offrent aux animaux un contrôle sur leur participation, tout en optimisant la qualité des données.</p>
+                <p><strong>Développement actuel :</strong> Intégration de mesures physiologiques (température, poids, rythme cardiaque) et d'enrichissements numériques interactifs (Bourse FC3R 2024).</p>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Prise de décision et économie comportementale</div>
+                <p>Exploration des biais décisionnels chez les primates non humains (aversion à la perte, distorsion des probabilités) à travers des dilemmes inspirés de l'économie comportementale humaine. Cette approche comparative inter-espèces étudie la fonction évolutive de ces biais cognitifs.</p>
+                <p><strong>Collaborations :</strong> Thomas Boraud et Nicolas Rougier (Bordeaux), Bureau d'Économie Théorique et Appliqué (BETA, Strasbourg)</p>
+                <p><strong>Financements :</strong> 2 bourses IDEX Université de Strasbourg</p>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Neuroimagerie à haut champ</div>
+                <p>Protocoles innovants utilisant l'IRM 7T postmortem et l'IRM 3T in vivo pour étudier la neuroanatomie d'espèces rarement étudiées (macaque de Tonkean, macaque du Tibet). Ces travaux établissent des liens entre structure cérébrale, comportements sociaux et capacités cognitives.</p>
+                <p><strong>Valorisation :</strong> Collaboration avec des parcs zoologiques (Mulhouse) pour mutualiser les données et optimiser l'utilisation d'individus décédés de mort naturelle.</p>
+                <p><strong>Plateforme :</strong> ICube (Strasbourg), collaboration ICM et INSERM SBRI</p>
+            </div>
+
+            <h2>Perspectives</h2>
+
+            <div class="highlight-box">
+                <p>Mon objectif à long terme est de développer la neuroprimatologie comme cadre unifié pour l'étude comparative des primates non humains, tout en contribuant aux avancées en neurosciences sociales et éthologie cognitive. Ces travaux s'inscrivent dans une préparation à un projet ERC et visent à établir un réseau thématique de recherche.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sébastien Ballesta - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

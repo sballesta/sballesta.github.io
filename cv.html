@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Sébastien Ballesta</title>
+    <style>
+        :root {
+            --primary: #2e8b57;
+            --secondary: #3cb371;
+            --light: #f0fff0;
+            --dark: #228B22;
+            --text: #333;
+            --background: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--secondary);
+            padding: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--dark);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .cv-item {
+            margin-bottom: 1.2rem;
+            padding: 0.8rem;
+            border-left: 3px solid var(--secondary);
+        }
+
+        .cv-item strong {
+            color: var(--primary);
+        }
+
+        .thesis-item {
+            margin-bottom: 1.5rem;
+            padding: 1.2rem;
+            background: #fafafa;
+            border-radius: 5px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .thesis-item.completed {
+            border-left-color: var(--dark);
+            background: var(--light);
+        }
+
+        .thesis-name {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .thesis-title {
+            font-style: italic;
+            color: #555;
+            margin: 0.5rem 0;
+        }
+
+        .thesis-meta {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        .thesis-meta span {
+            margin-right: 1rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
+        }
+
+        .status-badge.completed {
+            background: var(--dark);
+            color: white;
+        }
+
+        .status-badge.ongoing {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .funding-item {
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            background: var(--light);
+            border-radius: 4px;
+            border-left: 3px solid var(--dark);
+        }
+
+        .funding-amount {
+            color: var(--dark);
+            font-weight: bold;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            .thesis-meta span {
+                display: block;
+                margin: 0.3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sébastien Ballesta</h1>
+        <p>Neuroprimatologie & Éthologie Cognitive</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="recherche.html">Recherche</a>
+        <a href="enseignement.html">Enseignement</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Formation -->
+        <section>
+            <h2>Formation</h2>
+            <div class="cv-item">
+                <strong>2022</strong> - HDR, Université de Strasbourg<br>
+                <em>« Bases biologiques et psychologiques de la prise de décision chez le primate non-humain »</em>
+            </div>
+            <div class="cv-item">
+                <strong>2014</strong> - Doctorat en Neurosciences, Université Lyon 1<br>
+                <em>Émotions et décisions sociales chez les macaques</em>
+            </div>
+            <div class="cv-item">
+                <strong>2010</strong> - Master Biosciences, École Normale Supérieure de Lyon
+            </div>
+            <div class="cv-item">
+                <strong>2008</strong> - Licence Biologie, Université de Versailles Saint-Quentin-en-Yvelines
+            </div>
+        </section>
+
+        <!-- Parcours professionnel -->
+        <section>
+            <h2>Parcours professionnel</h2>
+            <div class="cv-item">
+                <strong>Depuis octobre 2018</strong><br>
+                Maître de Conférences, Université de Strasbourg (LNCA, UMR 7364)
+            </div>
+            <div class="cv-item">
+                <strong>2016-2018</strong><br>
+                Postdoctorat, Washington University, St. Louis, USA<br>
+                <em>Activité neuronale dans le cortex orbitofrontal lors de décisions économiques</em>
+            </div>
+            <div class="cv-item">
+                <strong>2015-2016</strong><br>
+                Postdoctorat, University of Arizona, Tucson, USA<br>
+                <em>Corrélats comportementaux des interactions sociales naturalistes chez les macaques</em>
+            </div>
+        </section>
+
+        <!-- Financements -->
+        <section>
+            <h2>Financements & Prix scientifiques</h2>
+            <div class="funding-item">
+                <strong>2025-2028</strong> - ANR PRC 'SocEcoPrim', Partenaire<br>
+                <span class="funding-amount">635 k€</span>
+            </div>
+            <div class="funding-item">
+                <strong>2024-2026</strong> - FC3R "Approches Numériques", AMI (Animal Machine Interface), PI<br>
+                <span class="funding-amount">75 k€</span>
+            </div>
+            <div class="funding-item">
+                <strong>2023-2025</strong> - IDEX 'Recherche Exploratoire', Université de Strasbourg, PI<br>
+                <span class="funding-amount">30 k€</span>
+            </div>
+            <div class="funding-item">
+                <strong>2022-2025</strong> - Région Grand-Est, 'Soutien aux projets doctoraux - NeuroEthoPrim'<br>
+                <span class="funding-amount">50 k€</span>
+            </div>
+            <div class="funding-item">
+                <strong>2021-2025</strong> - ANR PRC 'SocialNeuroNet', Coordinateur<br>
+                <span class="funding-amount">650 k€</span>
+            </div>
+            <div class="funding-item">
+                <strong>2020-2022</strong> - IDEX 'Attractivité', Université de Strasbourg, PI<br>
+                <span class="funding-amount">15 k€</span>
+            </div>
+            <div class="cv-item">
+                <strong>2022</strong> - ERC Starting Grant 'Towards the Origins of Cognitive Biases' (Step 2 - Interviewé)
+            </div>
+            <div class="cv-item">
+                <strong>2018</strong> - Tom Thach Awards, Washington University, St Louis, USA
+            </div>
+        </section>
+
+        <!-- Direction de thèses -->
+        <section>
+            <h2>Direction et Codirection de Thèses</h2>
+
+            <h2 style="margin-top: 2rem;">Thèses soutenues</h2>
+
+            <div class="thesis-item completed">
+                <div class="thesis-name">
+                    Dr. Mathieu Legrand
+                    <span class="status-badge completed">Soutenue</span>
+                </div>
+                <div class="thesis-title">« Stratégies de gestion du risque social chez deux espèces de macaques (Macaca mulatta et M. tonkeana) »</div>
+                <div class="thesis-meta">
+                    <span>📅 09/2021 - 12/2024</span>
+                    <span>👥 Codirection 50% avec Hélène Meunier (50%)</span>
+                </div>
+            </div>
+
+            <div class="thesis-item completed">
+                <div class="thesis-name">
+                    Dr. Alice Beaud
+                    <span class="status-badge completed">Soutenue</span>
+                </div>
+                <div class="thesis-title">« Étude des représentations perceptives et de leur attribution à autrui chez le macaque de Tonkean (Macaca tonkeana) et le capucin brun (Sapajus apella) »</div>
+                <div class="thesis-meta">
+                    <span>📅 09/2021 - 12/2024</span>
+                    <span>👥 Codirection 50% avec Hélène Meunier (50%)</span>
+                </div>
+            </div>
+
+            <div class="thesis-item completed">
+                <div class="thesis-name">
+                    Dr. Sarah Silvère
+                    <span class="status-badge completed">Soutenue</span>
+                </div>
+                <div class="thesis-title">« Bases cérébrales et cognitives de la tolérance sociale chez les macaques »</div>
+                <div class="thesis-meta">
+                    <span>📅 09/2021 - 10/2025</span>
+                    <span>👥 Direction 100%</span>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 2rem;">Thèses en cours</h2>
+
+            <div class="thesis-item">
+                <div class="thesis-name">
+                    Adam Provin
+                    <span class="status-badge ongoing">En cours</span>
+                </div>
+                <div class="thesis-meta">
+                    <span>📅 Depuis 09/2023</span>
+                    <span>👥 Codirection 25% avec Cécile Garcia (50%) et Julie Dubocsq (25%)</span>
+                </div>
+            </div>
+
+            <div class="thesis-item">
+                <div class="thesis-name">
+                    Ayrton Guerillon
+                    <span class="status-badge ongoing">En cours</span>
+                </div>
+                <div class="thesis-meta">
+                    <span>📅 Depuis 09/2024</span>
+                    <span>👥 Codirection 50% avec Mathieu Lefebvre (50%)</span>
+                </div>
+            </div>
+
+            <div class="thesis-item">
+                <div class="thesis-name">
+                    Théo Lemeux
+                    <span class="status-badge ongoing">En cours</span>
+                </div>
+                <div class="thesis-meta">
+                    <span>📅 Depuis 09/2024</span>
+                    <span>👥 Codirection 25% avec Charlotte Canteloup (75%)</span>
+                    <span>⚠️ Passage à 100% Charlotte Canteloup à partir de 10/2025</span>
+                </div>
+            </div>
+
+            <div class="thesis-item">
+                <div class="thesis-name">
+                    Lucas Spicher
+                    <span class="status-badge ongoing">En cours</span>
+                </div>
+                <div class="thesis-meta">
+                    <span>📅 Depuis 10/2025</span>
+                    <span>👥 Codirection 75% avec Cécile Garcia (25%)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsabilités -->
+        <section>
+            <h2>Responsabilités & Engagement</h2>
+            <div class="cv-item">
+                <strong>Depuis 2024</strong> - Co-Direction de l'équipe de recherche "Memory & Social cognition" (LNCA, UMR 7364)
+            </div>
+            <div class="cv-item">
+                <strong>Depuis 2023</strong> - Membre suppléant du Conseil National des Universités (CNU), Section 69
+            </div>
+            <div class="cv-item">
+                <strong>2021-2024</strong> - Membre du Comité Scientifique de la Société Francophone de Primatologie (Sfdp)
+            </div>
+            <div class="cv-item">
+                <strong>2025</strong> - Organisateur de la session "Advances in Neuroprimatology" au congrès NeuroFrance
+            </div>
+            <div class="cv-item">
+                <strong>Reviewer</strong> - Nature Communication, Scientific Reports, American Journal of Primatology, Royal Society Proceedings B, Behavioral Neuroscience, et autres
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sébastien Ballesta - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

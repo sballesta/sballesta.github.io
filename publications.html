@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Sébastien Ballesta</title>
+    <style>
+        :root {
+            --primary: #2e8b57;
+            --secondary: #3cb371;
+            --light: #f0fff0;
+            --dark: #228B22;
+            --text: #333;
+            --background: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--secondary);
+            padding: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--dark);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .publication {
+            margin-bottom: 2rem;
+            padding: 1.2rem;
+            background: #fafafa;
+            border-radius: 5px;
+            border-left: 4px solid var(--secondary);
+            position: relative;
+        }
+
+        .publication.featured {
+            background: var(--light);
+            border-left-color: var(--dark);
+        }
+
+        .pub-number {
+            position: absolute;
+            top: 1rem;
+            left: -2.5rem;
+            width: 2rem;
+            height: 2rem;
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .pub-authors {
+            color: #555;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .pub-title {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .pub-journal {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        .pub-links {
+            margin-top: 0.8rem;
+        }
+
+        .pub-links a {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            transition: background 0.3s;
+        }
+
+        .pub-links a:hover {
+            background: var(--dark);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
+        }
+
+        .status-badge.review {
+            background: #e67e22;
+            color: white;
+        }
+
+        .status-badge.revision {
+            background: #f39c12;
+            color: white;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            .pub-number {
+                position: static;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sébastien Ballesta</h1>
+        <p>Neuroprimatologie & Éthologie Cognitive</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="recherche.html">Recherche</a>
+        <a href="enseignement.html">Enseignement</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Sélection de 10 publications scientifiques</h2>
+
+            <div class="publication">
+                <div class="pub-authors">
+                    Guerrillon A*, Chaix-Eichel N*, Rougier P, M, Bourgeois-Gironde S, Boraud T#, <span class="highlight">Ballesta S#</span>
+                </div>
+                <div class="pub-title">
+                    Social hierarchy influences monkeys' risky decisions
+                    <span class="status-badge review">Under Review</span>
+                </div>
+                <div class="pub-journal">
+                    Communication Biology
+                </div>
+            </div>
+
+            <div class="publication featured">
+                <div class="pub-authors">
+                    Silvère S, Lamy J, Po C, Legrand M, Sallet J, <span class="highlight">Ballesta S</span>
+                </div>
+                <div class="pub-title">
+                    Neuroanatomical foundations of social tolerance across macaque species (2025)
+                    <span class="status-badge revision">Revision submitted</span>
+                </div>
+                <div class="pub-journal">
+                    eLife 14. doi:10.7554/eLife.106424.1
+                </div>
+                <div class="pub-links">
+                    <a href="https://hal.science/hal-05004023" target="_blank">📄 HAL</a>
+                </div>
+            </div>
+
+            <div class="publication featured">
+                <div class="pub-authors">
+                    <span class="highlight">Ballesta S</span> and Meunier H
+                </div>
+                <div class="pub-title">
+                    Is this worth the trouble? Strategic conflict management in Tonkean macaques (2023)
+                </div>
+                <div class="pub-journal">
+                    iScience
+                </div>
+                <div class="pub-links">
+                    <a href="https://hal.science/hal-04909518" target="_blank">📄 HAL</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-authors">
+                    ManyPrimates (including <span class="highlight">Ballesta S</span>, A. Beaud)
+                </div>
+                <div class="pub-title">
+                    The Evolution of Primate Short-Term Memory (2022)
+                </div>
+                <div class="pub-journal">
+                    Animal Behaviour and Cognition
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-authors">
+                    <span class="highlight">Ballesta S</span>, Sadoughi B, Miss F, Whitehouse J, Aguenounon G, Meunier H
+                </div>
+                <div class="pub-title">
+                    Assessing the reliability of an automated method for measuring dominance hierarchy in nonhuman primates (2021)
+                </div>
+                <div class="pub-journal">
+                    Primates
+                </div>
+                <div class="pub-links">
+                    <a href="https://hal.science/hal-03247244" target="_blank">📄 HAL</a>
+                </div>
+            </div>
+
+            <div class="publication featured">
+                <div class="pub-authors">
+                    Nioche A*, Rougier P*, Deffains M, Bourgeois-Gironde S, Boraud T#, <span class="highlight">Ballesta S#</span>
+                </div>
+                <div class="pub-title">
+                    The adaptive value of probability distortion and risk-seeking in macaques' decision-making (2021)
+                </div>
+                <div class="pub-journal">
+                    Proceedings of the Royal Society B: Biological Sciences
+                </div>
+                <div class="pub-links">
+                    <a href="https://inria.hal.science/hal-03005035" target="_blank">📄 HAL</a>
+                </div>
+            </div>
+
+            <div class="publication featured">
+                <div class="pub-authors">
+                    <span class="highlight">Ballesta S*</span>, Shi W*, Conen KE, Padoa-Schioppa C
+                </div>
+                <div class="pub-title">
+                    Values encoded in orbitofrontal cortex are causally related to economic choices (2020)
+                </div>
+                <div class="pub-journal">
+                    Nature
+                </div>
+            </div>
+
+            <div class="publication featured">
+                <div class="pub-authors">
+                    <span class="highlight">Ballesta S</span>, Padoa-Schioppa C
+                </div>
+                <div class="pub-title">
+                    Economic decisions through circuit inhibition (2019)
+                </div>
+                <div class="pub-journal">
+                    Current Biology
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-authors">
+                    <span class="highlight">Ballesta S</span>, Mosher CP, Szep J, Fischl K, Gothard KM
+                </div>
+                <div class="pub-title">
+                    Social determinants of spontaneous eyeblinks in adult male macaques (2016)
+                </div>
+                <div class="pub-journal">
+                    Scientific Reports
+                </div>
+                <div class="pub-links">
+                    <a href="https://univoak.hal.science/hal-05255166" target="_blank">📄 HAL</a>
+                </div>
+            </div>
+
+            <div class="publication featured">
+                <div class="pub-authors">
+                    <span class="highlight">Ballesta S</span>, Duhamel JR
+                </div>
+                <div class="pub-title">
+                    Rudimentary empathy in macaque's social decision (2015)
+                </div>
+                <div class="pub-journal">
+                    Proceedings of the National Academy of Sciences (PNAS)
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sébastien Ballesta - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

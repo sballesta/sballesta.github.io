@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sébastien Ballesta, PhD</title>
+    <style>
+        :root {
+            --primary: #2e8b57;
+            --secondary: #3cb371;
+            --light: #f0fff0;
+            --dark: #228B22;
+            --text: #333;
+            --background: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--secondary);
+            padding: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--dark);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            padding: 1.5rem;
+            background: var(--light);
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-card p {
+            color: #555;
+            margin: 0.5rem 0;
+        }
+
+        .contact-card a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-all;
+        }
+
+        .contact-card a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .social-link:hover {
+            background: var(--dark);
+            transform: scale(1.05);
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        .info-box {
+            background: #fff3cd;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #f39c12;
+            margin-top: 2rem;
+        }
+
+        .info-box h3 {
+            color: #e67e22;
+            margin-top: 0;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-links {
+                flex-direction: column;
+            }
+
+            .social-link {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sébastien Ballesta</h1>
+        <p>Neuroprimatologie & Éthologie Cognitive</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="recherche.html">Recherche</a>
+        <a href="enseignement.html">Enseignement</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contact</h2>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3><span class="icon">🏛️</span> Affiliation</h3>
+                    <p><strong>Université de Strasbourg</strong></p>
+                    <p>Laboratoire de Neurosciences Cognitives et Adaptatives (LNCA)</p>
+                    <p>UMR 7364 CNRS</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3><span class="icon">📍</span> Adresse</h3>
+                    <p>Centre de Primatologie</p>
+                    <p>Fort Foch</p>
+                    <p>23 rue du Loess</p>
+                    <p>67200 Strasbourg, France</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3><span class="icon">✉️</span> Email</h3>
+                    <p>
+                        <a href="mailto:sebastien.ballesta@unistra.fr">sebastien.ballesta@unistra.fr</a>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3><span class="icon">🔬</span> Laboratoire</h3>
+                    <p><strong>LNCA - UMR 7364</strong></p>
+                    <p>Équipe "Memory & Social Cognition"</p>
+                    <p>Co-directeur d'équipe</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ballesta-cdp/" target="_blank" class="social-link">
+                    <span class="icon">🔗</span>
+                    LinkedIn
+                </a>
+                <a href="https://scholar.google.fr/citations?user=yBqyokgAAAAJ&hl=fr" target="_blank" class="social-link">
+                    <span class="icon">🎓</span>
+                    Google Scholar
+                </a>
+                <a href="https://www.researchgate.net/profile/Sebastien-Ballesta?ev=hdr_xprf/" target="_blank" class="social-link">
+                    <span class="icon">🔬</span>
+                    ResearchGate
+                </a>
+                <a href="https://orcid.org/0000-0002-7854-5735/" target="_blank" class="social-link">
+                    <span class="icon">🆔</span>
+                    ORCID
+                </a>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 Collaborations & Opportunités</h3>
+                <p>Je suis ouvert aux collaborations de recherche, encadrement de stages et thèses, ainsi qu'aux invitations à des séminaires.</p>
+                <p>N'hésitez pas à me contacter pour discuter de projets en :</p>
+                <ul>
+                    <li>Neuroprimatologie et cognition sociale</li>
+                    <li>Prise de décision et économie comportementale</li>
+                    <li>Neuroimagerie (IRM) chez les primates non humains</li>
+                    <li>Éthologie cognitive et bien-être animal</li>
+                    <li>Méthodes automatisées de test comportemental</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sébastien Ballesta - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

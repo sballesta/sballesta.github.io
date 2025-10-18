@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sébastien Ballesta - Neuroprimatologie</title>
+    <style>
+        :root {
+            --primary: #2e8b57;
+            --secondary: #3cb371;
+            --light: #f0fff0;
+            --dark: #228B22;
+            --purple: #7b2d8e;
+            --text: #333;
+            --background: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .logo-container img {
+            max-width: 200px;
+            height: auto;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 8px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--secondary);
+            padding: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--dark);
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, var(--light) 0%, white 100%);
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--secondary);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card .icon {
+            font-size: 2rem;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .card a:hover {
+            background: var(--dark);
+        }
+
+        .highlight-box {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            border-left: 4px solid var(--purple);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight-box h2 {
+            color: var(--purple);
+            margin-top: 0;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-container {
+                flex-direction: column;
+            }
+
+            .logo-container img {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Cdp_Silabe_2024.png" alt="Centre de Primatologie - SILABE - Université de Strasbourg">
+        </div>
+        <h1>Dr. Sébastien Ballesta</h1>
+        <p>Maître de Conférences - Neuroprimatologie & Éthologie Cognitive</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="recherche.html">Recherche</a>
+        <a href="enseignement.html">Enseignement</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <h1>Bienvenue</h1>
+            <p>
+                Je suis Maître de Conférences à l'Université de Strasbourg, spécialisé en neuroprimatologie et éthologie cognitive. 
+                Mes recherches au Centre de Primatologie (CdP-Silabe) explorent la cognition sociale, la prise de décision et les bases neurobiologiques 
+                du comportement chez les primates non humains.
+            </p>
+        </div>
+
+        <div class="highlight-box">
+            <h2>🔬 Neuroprimatologie</h2>
+            <p>
+                Je coordonne le développement de la <strong>neuroprimatologie</strong>, un nouveau champ de recherche qui intègre 
+                neurobiologie, cognition, évolution et éthique animale pour l'étude comparative des primates. 
+                Cette approche holistique a été présentée lors du congrès NeuroFrance 2025 et fera l'objet d'un symposium 
+                à la conférence de l'European Federation for Primatology (EFP) en 2026.
+            </p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <h2><span class="icon">🔬</span> Recherche</h2>
+                <p>
+                    Mes travaux combinent neuroimagerie (IRM), dispositifs automatisés de test cognitif (MALT) et 
+                    observations comportementales pour étudier la tolérance sociale et la prise de décision chez les primates.
+                </p>
+                <a href="recherche.html">Découvrir mes projets →</a>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">📚</span> Enseignement</h2>
+                <p>
+                    J'enseigne dans les facultés de Psychologie et Sciences de la Vie de l'Université de Strasbourg, 
+                    de la Licence au Master, en éthologie cognitive, neurobiologie et prise de décision.
+                </p>
+                <a href="enseignement.html">Voir mes cours →</a>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">📄</span> Publications</h2>
+                <p>
+                    Mes recherches sont publiées dans des revues prestigieuses comme Nature, PNAS, Current Biology, 
+                    et eLife. Je dirige également plusieurs projets ANR sur la cognition sociale des primates.
+                </p>
+                <a href="publications.html">Consulter mes publications →</a>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🎓</span> Encadrement doctoral</h2>
+                <p>
+                    J'ai dirigé 3 thèses soutenues et encadre actuellement 4 doctorants en neuroprimatologie, 
+                    cognition sociale et économie comportementale.
+                </p>
+                <a href="cv.html">Voir mon CV complet →</a>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🏛️</span> Centre de Primatologie</h2>
+                <p>
+                    Le CdP-Silabe est une structure unique en Europe, installée dans un ancien fort militaire, 
+                    offrant un environnement semi-naturel pour étudier les primates en groupes sociaux.
+                </p>
+                <a href="contact.html">Me contacter →</a>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">💰</span> Financements</h2>
+                <p>
+                    Coordinateur de l'ANR SocialNeuroNet (650k€), partenaire de l'ANR SocEcoPrim (635k€), 
+                    et lauréat de bourses IDEX et FC3R pour développer des outils innovants.
+                </p>
+                <a href="cv.html#financements">En savoir plus →</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sébastien Ballesta - Université de Strasbourg - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enseignement - Sébastien Ballesta</title>
+    <style>
+        :root {
+            --primary: #2e8b57;
+            --secondary: #3cb371;
+            --light: #f0fff0;
+            --dark: #228B22;
+            --text: #333;
+            --background: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: var(--secondary);
+            padding: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--dark);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #555;
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .course {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #fafafa;
+            border-radius: 5px;
+            border-left: 3px solid var(--secondary);
+        }
+
+        .course strong {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .course-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-left: 0.5rem;
+        }
+
+        .course p {
+            margin-top: 0.5rem;
+            color: #555;
+        }
+
+        .pedagogy {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-top: 2rem;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .pedagogy h2 {
+            margin-top: 0;
+            border: none;
+            padding: 0;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sébastien Ballesta</h1>
+        <p>Neuroprimatologie & Éthologie Cognitive</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="recherche.html">Recherche</a>
+        <a href="enseignement.html">Enseignement</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Enseignement</h2>
+
+            <div class="intro">
+                <p>Depuis 2018, je développe une activité d'enseignement diversifiée à l'Université de Strasbourg, répartie entre la faculté de Psychologie (60%) et celle des Sciences de la Vie (40%). Mon approche pédagogique articule recherche en éthologie cognitive et transmission de connaissances à l'interface des neurosciences et de la psychologie comparée.</p>
+            </div>
+
+            <h2>Licence de Psychologie</h2>
+
+            <div class="course">
+                <strong>L1 - Évolution biologique</strong>
+                <span class="course-meta">(2×400 étudiants, 24h)</span>
+                <p>Introduction à la théorie de l'évolution et à la phylogénie, avec un focus sur les primates et l'espèce humaine.</p>
+            </div>
+
+            <div class="course">
+                <strong>L2 - Éthologie cognitive</strong>
+                <span class="course-meta">(25 étudiants, 15h)</span>
+                <p>Histoire des sciences du comportement, révolution cognitive et cognition comparée.</p>
+            </div>
+
+            <div class="course">
+                <strong>L2 - TP Cognition dans tous ses états</strong>
+                <span class="course-meta">(24 groupes, 48h)</span>
+                <p>Manipulation de signaux EEG via une interface développée en R, analyse de données comportementales et méthodes d'étude chez les sujets non verbaux.</p>
+            </div>
+
+            <div class="course">
+                <strong>L3 - Jeu & Développement</strong>
+                <span class="course-meta">(50 étudiants, 22h)</span>
+                <p>Exploration des comportements de jeu chez les animaux et des mécanismes neurobiologiques sous-jacents, en lien avec les problématiques d'addiction.</p>
+            </div>
+
+            <div class="course">
+                <strong>L3 - Neurobiologie des comportements</strong>
+                <span class="course-meta">(150 étudiants, 22h)</span>
+                <p>Bases biologiques de la cognition sociale chez les primates non humains, appuyées sur mes recherches au Centre de Primatologie.</p>
+            </div>
+
+            <h2>Licence Sciences de la Vie</h2>
+
+            <div class="course">
+                <strong>L3 - Introduction à l'écologie comportementale</strong>
+                <span class="course-meta">(120 étudiants, 23h)</span>
+                <p>Comportement animal, cognition et adaptation évolutive. TD pratiques sur l'observation en milieu naturel et réflexion sur le bien-être animal.</p>
+            </div>
+
+            <h2>Masters</h2>
+
+            <div class="course">
+                <strong>M1 EEE - Éthologie</strong>
+                <span class="course-meta">(40 étudiants, 54h)</span>
+                <p>Séances théoriques et pratiques d'observation au Centre de Primatologie. Épistémologie, théorie des jeux, marché biologique et évolution du langage.</p>
+            </div>
+
+            <div class="course">
+                <strong>M2 EEE - Prise de décision</strong>
+                <span class="course-meta">(4h)</span>
+                <p>Mécanismes cognitifs et neurobiologiques de la décision, intégrant les dernières recherches internationales.</p>
+            </div>
+
+            <div class="course">
+                <strong>M2 Neurosciences - Cognition animale</strong>
+                <span class="course-meta">(30 étudiants, 15h)</span>
+                <p>Modèles animaux pour comprendre les fonctions cognitives humaines, avec réflexion éthique sur la recherche.</p>
+            </div>
+
+            <div class="course">
+                <strong>Joint Master in Neuroscience - Cognition des primates</strong>
+                <span class="course-meta">(12 étudiants, 6h)</span>
+                <p>Avancées en neuro-primatologie et visite de la plateforme CdP-Silabe.</p>
+            </div>
+
+            <div class="pedagogy">
+                <h2>Approche pédagogique</h2>
+                <p>Formé à l'IDIP en 2018, j'adopte une pédagogie centrée sur l'étudiant, utilisant Moodle, le travail en sous-groupes et la classe inversée. Je développe des outils innovants (interface R pour l'EEG) et intègre des problématiques contemporaines : éthique en neurosciences, usage de l'IA, bien-être animal.</p>
+                <p style="margin-top: 1rem;">Depuis 2024, je coordonne l'UE <strong>Méthodologie du Travail Universitaire</strong> en L1 (600 étudiants), où j'ai introduit des thèmes sur l'usage éthique de l'IA et la compétition attentionnelle liée aux réseaux sociaux.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sébastien Ballesta - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
