@@ -207,6 +207,18 @@
     </style>
 </head>
 <body>
+
+<div id="google_translate_element" style="position: fixed; bottom: 20px; right: 20px;"></div>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {pageLanguage: 'fr', includedLanguages: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+    'google_translate_element'
+  );
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <header>
         <div class="logo-container">
             <img src="Cdp_Silabe_2024.png" alt="Centre de Primatologie - SILABE - Université de Strasbourg">
@@ -216,7 +228,6 @@
     </header>
 
     <nav>
-        <a href="index.html">Accueil</a>
         <a href="recherche.html">Recherche</a>
         <a href="enseignement.html">Enseignement</a>
         <a href="publications.html">Publications</a>
@@ -228,19 +239,16 @@
         <div class="hero">
             <h1>Bienvenue</h1>
             <p>
-                Je suis Maître de Conférences à l'Université de Strasbourg, spécialisé en neuroprimatologie et éthologie cognitive. 
-                Mes recherches au Centre de Primatologie (CdP-Silabe) explorent la cognition sociale, la prise de décision et les bases neurobiologiques 
-                du comportement chez les primates non humains.
+                Mes recherches au Centre de Primatologie de l'Université de Strasbourg (CdP-Silabe) explorent la cognition sociale, la prise de décision et les bases neurobiologiques 
+                du comportement chez différentes espéces de les primates non-humains (PNH).
             </p>
         </div>
 
         <div class="highlight-box">
             <h2>🔬 Neuroprimatologie</h2>
             <p>
-                Je coordonne le développement de la <strong>neuroprimatologie</strong>, un nouveau champ de recherche qui intègre 
+                Je participe à développer la <strong>neuroprimatologie</strong>, un nouveau champ de recherche qui intègre 
                 neurobiologie, cognition, évolution et éthique animale pour l'étude comparative des primates. 
-                Cette approche holistique a été présentée lors du congrès NeuroFrance 2025 et fera l'objet d'un symposium 
-                à la conférence de l'European Federation for Primatology (EFP) en 2026.
             </p>
         </div>
 
@@ -249,7 +257,7 @@
                 <h2><span class="icon">🔬</span> Recherche</h2>
                 <p>
                     Mes travaux combinent neuroimagerie (IRM), dispositifs automatisés de test cognitif (MALT) et 
-                    observations comportementales pour étudier la tolérance sociale et la prise de décision chez les primates.
+                    observations comportementales pour étudier la tolérance sociale et la prise de décision chez les macaques.
                 </p>
                 <a href="recherche.html">Découvrir mes projets →</a>
             </div>
@@ -267,7 +275,7 @@
                 <h2><span class="icon">📄</span> Publications</h2>
                 <p>
                     Mes recherches sont publiées dans des revues prestigieuses comme Nature, PNAS, Current Biology, 
-                    et eLife. Je dirige également plusieurs projets ANR sur la cognition sociale des primates.
+                    et eLife. Je participes également plusieurs projets ANR sur la cognition sociale des primates.
                 </p>
                 <a href="publications.html">Consulter mes publications →</a>
             </div>
@@ -275,8 +283,7 @@
             <div class="card">
                 <h2><span class="icon">🎓</span> Encadrement doctoral</h2>
                 <p>
-                    J'ai dirigé 3 thèses soutenues et encadre actuellement 4 doctorants en neuroprimatologie, 
-                    cognition sociale et économie comportementale.
+                    J'ai dirigé 3 thèses soutenues et encadre actuellement 3 doctorants en cognition et économie comportementale chez les PNH.
                 </p>
                 <a href="cv.html">Voir mon CV complet →</a>
             </div>
@@ -287,7 +294,7 @@
                     Le CdP-Silabe est une structure unique en Europe, installée dans un ancien fort militaire, 
                     offrant un environnement semi-naturel pour étudier les primates en groupes sociaux.
                 </p>
-                <a href="contact.html">Me contacter →</a>
+                <a href="https://www.silabe.com/recherche/soutien-a-lethologie-et-aux-neurosciences-cognitives">En savoir plus →</a>
             </div>
 
             <div class="card">
@@ -304,5 +311,7 @@
     <footer>
         <p>&copy; 2025 Sébastien Ballesta - Université de Strasbourg - Tous droits réservés</p>
     </footer>
+
+
 </body>
 </html>
