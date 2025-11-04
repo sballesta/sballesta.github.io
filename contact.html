@@ -198,6 +198,18 @@
     </style>
 </head>
 <body>
+
+<!-- 'en,fr,es,ar,zh-CN,id'  -->
+    
+<div id="google_translate_element" style="position: fixed; bottom: 20px; right: 20px;"></div>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {pageLanguage: 'fr', includedLanguages: 'en,fr,es,ar,zh-CN,id', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+    'google_translate_element'
+  );
+}
+    
     <header>
         <h1>Sébastien Ballesta</h1>
         <p>Neuroprimatologie & Éthologie Cognitive</p>
@@ -209,7 +221,7 @@
         <a href="enseignement.html">Enseignement</a>
         <a href="publications.html">Publications</a>
         <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
+     
     </nav>
 
     <main>
